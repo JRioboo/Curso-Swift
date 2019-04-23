@@ -12,8 +12,6 @@
 		6595793A226CEA5100FDCF70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65957938226CEA5100FDCF70 /* Main.storyboard */; };
 		6595793C226CEA5300FDCF70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6595793B226CEA5300FDCF70 /* Assets.xcassets */; };
 		6595793F226CEA5300FDCF70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6595793D226CEA5300FDCF70 /* LaunchScreen.storyboard */; };
-		6595794A226CEA5300FDCF70 /* Curso_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65957949226CEA5300FDCF70 /* Curso_SwiftTests.swift */; };
-		65957955226CEA5300FDCF70 /* Curso_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65957954226CEA5300FDCF70 /* Curso_SwiftUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +40,7 @@
 		6595793E226CEA5300FDCF70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65957940226CEA5300FDCF70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65957945226CEA5300FDCF70 /* Curso SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Curso SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		65957949226CEA5300FDCF70 /* Curso_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curso_SwiftTests.swift; sourceTree = "<group>"; };
-		6595794B226CEA5300FDCF70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65957950226CEA5300FDCF70 /* Curso SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Curso SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		65957954226CEA5300FDCF70 /* Curso_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curso_SwiftUITests.swift; sourceTree = "<group>"; };
-		65957956226CEA5300FDCF70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				65957933226CEA5100FDCF70 /* Curso Swift */,
-				65957948226CEA5300FDCF70 /* Curso SwiftTests */,
-				65957953226CEA5300FDCF70 /* Curso SwiftUITests */,
 				65957932226CEA5100FDCF70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,32 +89,70 @@
 		65957933226CEA5100FDCF70 /* Curso Swift */ = {
 			isa = PBXGroup;
 			children = (
-				65957934226CEA5100FDCF70 /* AppDelegate.swift */,
-				65957936226CEA5100FDCF70 /* ViewController.swift */,
-				65957938226CEA5100FDCF70 /* Main.storyboard */,
-				6595793B226CEA5300FDCF70 /* Assets.xcassets */,
-				6595793D226CEA5300FDCF70 /* LaunchScreen.storyboard */,
 				65957940226CEA5300FDCF70 /* Info.plist */,
+				65F67BCB226F785200DC8593 /* App */,
+				65F67BCC226F787500DC8593 /* Resources */,
+				65F67BCD226F78A800DC8593 /* Features */,
 			);
 			path = "Curso Swift";
 			sourceTree = "<group>";
 		};
-		65957948226CEA5300FDCF70 /* Curso SwiftTests */ = {
+		65F67BCB226F785200DC8593 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				65957949226CEA5300FDCF70 /* Curso_SwiftTests.swift */,
-				6595794B226CEA5300FDCF70 /* Info.plist */,
+				65957934226CEA5100FDCF70 /* AppDelegate.swift */,
 			);
-			path = "Curso SwiftTests";
+			path = App;
 			sourceTree = "<group>";
 		};
-		65957953226CEA5300FDCF70 /* Curso SwiftUITests */ = {
+		65F67BCC226F787500DC8593 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				65957954226CEA5300FDCF70 /* Curso_SwiftUITests.swift */,
-				65957956226CEA5300FDCF70 /* Info.plist */,
+				6595793B226CEA5300FDCF70 /* Assets.xcassets */,
 			);
-			path = "Curso SwiftUITests";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		65F67BCD226F78A800DC8593 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				65F67BCE226F78CF00DC8593 /* Main */,
+				65F67BCF226F78D400DC8593 /* Launch */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		65F67BCE226F78CF00DC8593 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				65F67BD1226F790E00DC8593 /* Controllers */,
+				65957936226CEA5100FDCF70 /* ViewController.swift */,
+				65957938226CEA5100FDCF70 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		65F67BCF226F78D400DC8593 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				65F67BD0226F790000DC8593 /* Views */,
+				6595793D226CEA5300FDCF70 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		65F67BD0226F790000DC8593 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65F67BD1226F790E00DC8593 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +295,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6595794A226CEA5300FDCF70 /* Curso_SwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +302,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65957955226CEA5300FDCF70 /* Curso_SwiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +460,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Curso Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,6 +469,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Me.Curso-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,7 +479,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Curso Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +488,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Me.Curso-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
